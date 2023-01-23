@@ -1,0 +1,76 @@
+:root {
+
+}
+
+nav {
+    display: flex;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#About-Me {
+    width: 100%;
+    
+}
+
+.profile-picture {
+    width: 200px;
+    height: 300px;
+}
+
+.project-pic {
+    width: 200px;
+    height: 200px;
+}
+
+.prework {
+    width: 200px;
+    height: 200px;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.center {
+    display: flex;
+    justify-content: center ;
+}
+
+.ftr-contact {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/*Guidelines for typical breaking points to select
+for different screens gathered from W3Schools.*/
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
