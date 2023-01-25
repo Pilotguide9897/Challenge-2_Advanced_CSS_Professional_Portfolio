@@ -92,7 +92,7 @@ section.banner-img {
 
 .wrapper {
     margin: 150px auto;
-    width: 70%;
+    width: 80%;
 }
 
 .text-box {
@@ -166,57 +166,110 @@ h3 span {
     border-radius: 3px;
 }
 
-.prework {
-    width: 100%;
-}
-
-.card:hover {
-    opacity: 0.5;
-}
-
-.center {
-    display: flex;
-    justify-content: center ;
-}
-
-.hdr-navigation {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-}
-
 .ftr-contact {
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
 }
 
-.experience {
-    display: inline;
+#prework {
+    max-width: 450px;
+    max-width: 450px;
+    margin: 3px;
+    border: 5px solid rgb(123, 120, 120);
+    display: inline-block;
+    vertical-align: top;
 }
-/*Guidelines for typical breaking points to select
-for different screens gathered from W3Schools.*/
 
-@media only screen and (min-width: 768px) {
-    .project-pic {
-        width: 25%;
-    } 
-    .main-nav {
-        display:flex
+.image img {
+    max-height: 325px;
+    max-width: 325px;
+    margin: 3px;
+    border: 5px solid rgb(123, 120, 120);
+    display: inline-block;
+    
+    
+}
+
+.bucket {
+    max-width: 100%;
+    background-color: red;
+    margin:auto
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 15px 0;
+    line-height: 1.4;
+}
+
+.column {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.column {
+    font-size: 18px;
+    color:rgb(0, 136, 169, 1);
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    position: relative
+}
+
+h4 {
+    margin-bottom: 8px;
+}
+
+.column h4::before {
+    content: '';
+    position: absolute;
+    background-color: #1e79e9;
+    height: 2px;
+    width: 50px;
+}
+
+.column ul li:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.column ul li:hover {
+    transition: all 0.3s ease;
+    padding-left: 10px;
+}
+
+.socil-links {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .image img {
+        justify-content: center;
+        width: ;
     }
-    .main-nav li {
-        width: 100%;
-    }
+   
 }
 
 @media screen and (max-width: 992px) {
-    .project-pic {
-        width: 33%;
-    }
+   .image img {
+    justify-content: center
+    width: ;
+   }
 }
 
 @media screen and (min-width: 1200px) {
-    .project-pic {
-        width: 50%;
-    }
+   .image img {
+    justify-content: center
+    width: ;
+   }
 }
