@@ -8,14 +8,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: darkslategrey;
+    background-color: rgb(24, 26, 26);
 }
 
 li, a, button {
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color:antiquewhite;
+    color:azure;
     text-decoration: none;
 }
 
@@ -30,8 +30,8 @@ header {
     cursor: pointer;
     border-radius: 25px;
     margin-right: auto;
-    height: 10%;
-    width: 10%;
+    height: 17%;
+    width: 17%;
 }
 
 .nav-links {
@@ -72,28 +72,48 @@ main {
     align-items: center;
 }
 
+section.banner-img {
+    width: 100%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid whitesmoke;
+    
+}
+
+section.banner-img {
+    position: relative;
+    background:url(./Images/Banner.jpg) center;
+    background-clip: cover;
+    height: 150px;
+    overflow: hidden;
+}
+
+
 .wrapper {
     margin: 150px auto;
     width: 70%;
 }
 
 .text-box {
-    color: antiquewhite;
+    color: azure;
 }
 
 .text-box h2 {
     font-size: 42px;
+    padding-bottom: 6px;
 }
 
 .text-box {
     font-size: 16px;
 }
 .profile-picture {
-    max-width: 330px;
+    max-width: 385px;
     float: right;
-    border: 3px solid #d9dcd6;
+    border: 3px solid whitesmoke;
     border-radius: 10px;
     margin-left: 15px;
+    margin-bottom: 6px;
 }
 
 nav {
@@ -111,18 +131,39 @@ main {
     justify-content: space-between;
 }
 
-#name {
-    background-color: blueviolet
+.my-projects h2 {
+    font-size: 36px;
+    padding-bottom: 6px;
+    color: azure;
+    margin-left: 20px;
+    background-color: #0088a9;
+    display: inline-block;
 }
 
-#About-Me {
-    width: 100%;
-    
+div.image {
+    position: relative;
+    width: 50%;
 }
 
-.profile-picture {
-    width: 200px;
-    height: 300px;
+div.image:hover {
+    opacity: 0.5;
+}
+
+h3 {
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    color: azure;
+    font-size: large;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+h3 span {
+    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0, 0.7);
+    padding: 3px;
+    border-radius: 3px;
 }
 
 .prework {
