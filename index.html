@@ -5,64 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JG Professional Portfolio</title>
     <link rel="stylesheet" href="./assets/reset.css" />
+    <script src="https://kit.fontawesome.com/83fee9227b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
-  
   <body>
-    <header>
-      <figure>
-        <img class="profile-picture" src="./assets/Images/Profile picture.jpeg" alt="Profile Picture">
-      </figure>
-      
-      <nav>
-        <ul>
-          <li>
-            <button href="#About-Me">About Me</button>
-          </li>
-          <li>
-            <button><a href="#My-Work">My Work</a></button>
-            
-          </li>
-          <li>
-            <button><a href="#Contact-Me">Contact Me</a></button>
-          </li>
-        </ul>
+    <header> 
+      <img class="logo" src="./assets/Images/Personal Logo.png" alt="logo">
+        <nav>
+          <ul class="nav-links">
+              <li><a href="#About-Me">About Me</a></li>
+              <li><a href="#My-Projects">My Projects</a></li>
+          </ul>
       </nav>
+      <a class="contact" href="#Contact"><button>Contact</button></a>
     </header>
 
     <main>
+      <section class="wrapper">
+        <img class="profile-picture" src="./assets/Images/Grad-picture.jpeg" alt="My Graduation Photo"
+        <div class="text-box">
+          <h2>Hello World! My name is Jared.<i class="fas fa-cat" style="font-size: larger;"></i></h2>
+          <p>As an aspiring web developer, I have a passion for creating and building dynamic, 
+            interactive websites and web applications. I have a strong understanding of web 
+            development technologies and languages such as HTML, CSS, JavaScript, and various frameworks and libraries. 
+            I am always trying stay up-to-date with the latest developments in web design and user experience, 
+            and am always looking to improve my skills and knowledge. I have a keen eye for detail 
+            and am able to turn complex requirements into clean, efficient code. 
+            As a Full Stack developer I am driven by a desire to create high-quality, engaging digital experiences for users! </p>
+          </div>
+
+      </section>
+
+
+
+
+
+
+      <figure>
+        <img class="profile-picture" src="./assets/Images/Profile picture.jpeg" alt="Profile Picture">
+        <figcaption><h1 id="name">Jared Green</h1></figcaption>
+      </figure>
 
       <Aside id="About-Me">
         <h2 class="center">About Me</h2>
+        <p></p>
+
       </Aside>
 
       <content>
-        <section>
+        <section class="experience">
          <a href="https://pilotguide9897.github.io/Prework-Study-Guide/"> <img class="prework" src="./assets/Images/Study guide.jpg" alt="HTML,CSS, and JavaScript Study Guide"> </a>
         </section>
 
-        <section>
+        <section class="experience">
           <img class = project-pic src="./assets/Images/Calculator.jpg" alt="Calculator">
         
-        </section>
+        </section class="experience">
 
-        <section>
+        <section class="experience">
           <img class = project-pic src="./assets/Images/Chess.jpg" alt="Chess Board">
         </section>
 
-        <section>
+        <section class="experience">
           <img class = project-pic src="./assets/Images/Recipe tracker.jpg" alt="Recipe Book">
         </section>
         
-        <section>
+        <section class="experience">
           <img class = project-pic src="./assets/Images/Survey.jpg" alt="Ballot Box">
         </section>
 
-        <section>
+        <section class="experience">
           <img class = project-pic src="./assets/Images/Timer.jpg" alt="Countdown Timer">
         </section>
 
-        <section>
+        <section class="experience">
           <img class = project-pic src="./assets/Images/To do list.jpg" alt="To Do List">
         </section>
       </content>  
