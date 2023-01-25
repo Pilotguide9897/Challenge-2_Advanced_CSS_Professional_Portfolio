@@ -2,6 +2,100 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: darkslategrey;
+}
+
+li, a, button {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:antiquewhite;
+    text-decoration: none;
+}
+
+header {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    border-radius: 25px;
+    margin-right: auto;
+    height: 10%;
+    width: 10%;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    margin-left: 20px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.75);
+}
+
+
+main {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.wrapper {
+    margin: 150px auto;
+    width: 70%;
+}
+
+.text-box {
+    color: antiquewhite;
+}
+
+.text-box h2 {
+    font-size: 42px;
+}
+
+.text-box {
+    font-size: 16px;
+}
+.profile-picture {
+    max-width: 330px;
+    float: right;
+    border: 3px solid #d9dcd6;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
 nav {
     display: flex;
     
@@ -17,6 +111,10 @@ main {
     justify-content: space-between;
 }
 
+#name {
+    background-color: blueviolet
+}
+
 #About-Me {
     width: 100%;
     
@@ -27,23 +125,23 @@ main {
     height: 300px;
 }
 
-.project-pic {
-    width: 200px;
-    height: 200px;
-}
-
 .prework {
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 .card:hover {
-    opacity: 1;
+    opacity: 0.5;
 }
 
 .center {
     display: flex;
     justify-content: center ;
+}
+
+.hdr-navigation {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
 }
 
 .ftr-contact {
@@ -52,25 +150,32 @@ main {
     list-style: none;
 }
 
+.experience {
+    display: inline;
+}
 /*Guidelines for typical breaking points to select
 for different screens gathered from W3Schools.*/
 
-@media only screen and (max-width: 600px) {
-    
-}
-
-@media only screen and (min-width: 600px) {
-    
-}
-
 @media only screen and (min-width: 768px) {
-    
+    .project-pic {
+        width: 25%;
+    } 
+    .main-nav {
+        display:flex
+    }
+    .main-nav li {
+        width: 100%;
+    }
 }
 
-@media screen and (min-width: 992px) {
-    
+@media screen and (max-width: 992px) {
+    .project-pic {
+        width: 33%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    
+    .project-pic {
+        width: 50%;
+    }
 }
